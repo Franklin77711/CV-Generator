@@ -1,0 +1,43 @@
+body{
+    background-color: lightgray;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+input{
+    width: 10rem;
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    margin: 0;
+    padding: 0;
+}
+
+#form-side{
+    width: 50vw;
+    background-color: yellow;
+}
+
+#generated-side{
+    width: 50vw;
+    background-color: aqua;
+}
+
+#generated-content{
+    background-color: red;
+    width: 70%;
+    height:35em;
+    margin: 1em 10em;
+}
+#content{
+    display: flex;
+}
