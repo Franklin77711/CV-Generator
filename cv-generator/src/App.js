@@ -10,6 +10,8 @@ class App extends Component{
   constructor(){
     super()
 
+    this.submitAction = this.submitAction.bind(this);
+
     this.state={
       general: {
         name: '',
@@ -55,6 +57,7 @@ class App extends Component{
   submitAction = (e) =>{
     e.preventDefault();
     this.setState({
+      generals: this.state.generals = [],
       generals: this.state.generals.concat(this.state.general),
       general: {
         name: "",
@@ -68,11 +71,11 @@ class App extends Component{
     const {general, generals} = this.state;
     return(
       <div>
-        <h1>CV Generator</h1>
+        <h1 id="main-title">CV Generator</h1>
         <div id="content">
           <div id="form-side">
           <form onSubmit={this.submitAction}>
-            <h3 htmlFor="General">General Information</h3>
+            <h3 htmlFor="General" className="subhead">General Information</h3>
             <label htmlFor="name">Name:</label>
             <input id="name" value={general.name} onChange={this.handleChangeName}></input>
             <label htmlFor="address">Address:</label>
@@ -84,7 +87,7 @@ class App extends Component{
           </div>
           <div id="generated-side">
             <div id="generated-content">
-              <General/>
+              <General generals={generals}/>
               <Education/>
               <Experience/>
             </div>

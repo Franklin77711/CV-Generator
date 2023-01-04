@@ -17,14 +17,21 @@ h1{
     text-align: center;
 }
 
-h3{
+.subhead{
     margin: 0;
     padding: 0;
+}
+
+button{
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 #form-side{
     width: 50vw;
     background-color: yellow;
+    position: relative;
 }
 
 #generated-side{
@@ -36,7 +43,7 @@ h3{
     background-color: red;
     width: 70%;
     height:35em;
-    margin: 1em 10em;
+    margin: 1em 7em;
 }
 #content{
     display: flex;
