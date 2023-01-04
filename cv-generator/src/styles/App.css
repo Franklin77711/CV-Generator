@@ -30,19 +30,18 @@ button{
 
 #form-side{
     width: 50vw;
-    background-color: yellow;
+    height:auto;
     position: relative;
 }
 
 #generated-side{
     width: 50vw;
-    background-color: aqua;
 }
 
 #generated-content{
-    background-color: red;
+    background-color: white;
     width: 70%;
-    height:35em;
+    height: 85vh;
     margin: 1em 7em;
 }
 #content{
