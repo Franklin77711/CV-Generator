@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import style from "../styles/GeneratedGeneral.css"
+import style from "../styles/GeneratedEducation.css"
 
 
-class General extends Component{
+class Education extends Component{
     constructor(props){
         super(props)
     }
@@ -10,13 +10,12 @@ class General extends Component{
        let {educations} = this.props;
     return(
             <div>
-                <h3>Education</h3>
                 {educations.map((education) => {
                     return (
                         <div key={education.id} id="render-education">
-                            <p id="render-school" >{education.school}</p>
+                            <h3 className="subtitle">Education</h3>
+                            <p id="render-school" ><span id="time">{education.time}</span> <strong>{education.school}</strong></p>
                             <p id="render-subject">{education.subject}</p>
-                            <p id="render-time" >{education.time}</p>
                         </div>
                     )
                 })}
@@ -25,4 +24,4 @@ class General extends Component{
     }
     }
 
-export default General
+export default Education
