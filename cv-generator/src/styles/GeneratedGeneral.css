@@ -1,9 +1,0 @@
-#render-name{
-    padding-top: 0.3em;
-}
-#render-general :not(#render-name){
-    text-align: right;
-    font-style: italic;
-    margin-right: 1em;
-    font-size: 14px;
-}
