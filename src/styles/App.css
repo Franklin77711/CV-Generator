@@ -1,0 +1,49 @@
+body{
+    background-color: lightgray;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+input{
+    width: 10rem;
+}
+
+h1{
+    text-align: center;
+}
+
+.subhead{
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#form-side{
+    width: 50vw;
+    height:auto;
+    position: relative;
+}
+
+#generated-side{
+    width: 50vw;
+}
+
+#generated-content{
+    background-color: white;
+    width: 70%;
+    height: 85vh;
+    margin: 1em 7em;
+}
+#content{
+    display: flex;
+}
